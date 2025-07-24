@@ -1,7 +1,8 @@
 /* Reset dan Font */
 body {
+
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display: flex;
   scroll-behavior: smooth;
 }
@@ -17,7 +18,7 @@ body {
   width: 250px;
   background-color: #1f67ed;
   color: rgb(1, 0, 0);
-  padding: 20px;
+  padding: 10px;
   min-height: 100vh;
   box-sizing: border-box;
 }
@@ -75,88 +76,42 @@ body {
 /* Heading */
 h2 {
   color: #0b3d91;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 /* Form */
 form {
-  background: white;
+  text-align: center;
   padding: 20px;
-  border-radius: 8px;
-  max-width: 300px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  width: 90%;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  display: inline-block;
 }
 
-form label {
-  display: block;
-  margin-top: 12px;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  padding: 8px;
-  margin-top: 6px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 14px;
-}
-
-form button {
-  background-color: #0b3d91;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  margin-top: 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.3s;
-}
-
-form button:hover {
-  background-color: #093373;
-}
-
-.hapus-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: red;
-  font-size: 13px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.anggota-card {
-  position: relative;
+#tentang {
+  margin-bottom: 30px;
   padding: 15px;
-  border-radius: 8px;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+#tentang h2 {
+  color: #1d4ed8;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
-/* Default border (abu) */
-form input:invalid,
-form textarea:invalid {
-  border: 1px solid #ccc;
+#tentang p {
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
-/* Saat form dikirimkan dan field invalid */
-form.submitted input:invalid,
-form.submitted textarea:invalid {
-  border: 2px solid red;
-}
-
-/* Saat field valid */
-form input:valid,
-form textarea:valid {
-  border: 2px solid green;
-}
 
 #data-pelatih {
   display: flex;
